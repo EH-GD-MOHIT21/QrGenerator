@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7hzut(v^0cs^4v2ojwc7ma3fudh5f8zg)g(zn7-a##85=arez1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','qrwala.herokuapp.com']
 
 
 # Application definition
@@ -142,4 +142,4 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
-URL = 'http://127.0.0.1:8000/'
+URL = 'https://qrwala.herokuapp.com/'
