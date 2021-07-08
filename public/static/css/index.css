@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.msg {
+    text-align: center;
+    color: white;
+}
+
+h5 {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+    color: crimson;
+}
+
+input[type="text"] {
+    width: 90%;
+    height: 50px !important;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    background: none;
+    border: 2px solid crimson;
+    color: white;
+}
+
+.allitems {
+    margin-top: 25vh;
+}
+
+.fileinpt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    display: block !important;
+    margin: 20px auto;
+}

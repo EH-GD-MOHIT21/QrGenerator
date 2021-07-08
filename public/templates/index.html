@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRWALA.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body style="background-image: url({% static 'imgs/mohit.jpg' %})">
+        <h3 class="text-center">Welcome to QRWALA.com!!!</h3>
+        <h3 class="text-center">No signup Required</h3>
+    <div class="allitems">
+        <div class="msg">
+            {% for message in messages %} <h5>{{message}}</h5> {% endfor %}
+        </div>
+        <form action="/generate" method="post" enctype="multipart/form-data">
+            <input required type="text" name="textvalue" placeholder="enter your text here">
+            <button class="btn btn-primary" type="submit">Generate</button>
+        </form>
+        <h3 class="text-center">Or</h3>
+        <form action="/decode" method="post" enctype="multipart/form-data">
+            <div class="fileinpt">
+                <input type="file" name="file" id="file" required accept="image/*">
+            </div>
+            <button class="btn btn-primary">Decode</button>
+        </form>
+    </div>
+</body>
+
+</html>
