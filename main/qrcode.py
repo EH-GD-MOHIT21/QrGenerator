@@ -10,6 +10,7 @@ def abspath(path):
     return os.path.join(BASE_DIR,f'media/{path}')
 
 def createqrcode(data):
+    data = str(data)[:100]
     ctime = str(datetime.now())
     ctime = ctime.replace('.','-')
     ctime = ctime.replace(':','-')
