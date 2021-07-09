@@ -6,4 +6,4 @@ class ImageCollector(models.Model):
     image = models.ImageField(upload_to='imgs',null=True,blank=True)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
