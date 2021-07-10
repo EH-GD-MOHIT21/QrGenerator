@@ -25,7 +25,11 @@ input[type="text"] {
     margin: 20px auto;
     padding: 5px;
     background: none;
-    border: 2px solid crimson;
+/*     border: 2px solid crimson; */
+    color: white;
+}
+
+::placeholder{
     color: white;
 }
 
