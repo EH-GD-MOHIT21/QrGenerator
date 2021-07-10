@@ -12,15 +12,19 @@
 </head>
 
 <body>
-        <h3 class="text-center">Welcome to QRWALA.com!!!</h3>
-        <h3 class="text-center">No signup Required</h3>
+    <h3 class="text-center">Welcome to QRWALA.com!!!</h3>
+    <h3 class="text-center">No signup Required</h3>
+    <div class="extracontent">
+        <img class="d-block mx-auto text-center" src="{% static 'imgs/mohit.png' %}">
+    </div>
     <div class="allitems">
         <div class="msg">
-            {% for message in messages %} <h5>{{message}}</h5> {% endfor %}
+            {% for message in messages %}
+            <h5>{{message}}</h5> {% endfor %}
         </div>
         <form action="/generate" method="post" enctype="multipart/form-data">
             <input required type="text" name="textvalue" placeholder="enter your text here">
-            <button class="btn btn-primary" type="submit">Generate</button>
+            <button class="btn btn-primary" type="submit">Generate Qr</button>
         </form>
         <h3 class="text-center">Or</h3>
         <form action="/decode" method="post" enctype="multipart/form-data">
