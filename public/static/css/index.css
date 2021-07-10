@@ -14,7 +14,8 @@ h5 {
 }
 
 body {
-    background: #FB7185;
+    color: black;
+    background: #FDA4AF;
 }
 
 input[type="text"] {
@@ -25,16 +26,13 @@ input[type="text"] {
     margin: 20px auto;
     padding: 5px;
     background: none;
-/*     border: 2px solid crimson; */
-    color: white;
-}
-
-::placeholder{
-    color: white;
+    border: 2px solid black;
+    outline: none;
+    color: blueviolet;
 }
 
 .allitems {
-    margin-top: 25vh;
+    margin-top: 20px;
 }
 
 .fileinpt {
@@ -48,4 +46,11 @@ input[type="text"] {
 button {
     display: block !important;
     margin: 20px auto;
+}
+
+@media (max-width:600px) {
+    .extracontent img {
+        width: 200px;
+        height: 200px;
+    }
 }
